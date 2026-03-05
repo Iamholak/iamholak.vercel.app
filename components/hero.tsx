@@ -31,7 +31,7 @@ export function Hero() {
             <div className="mb-8 relative inline-block">
               <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden glow-card animate-glow-pulse">
                 <Image
-                  src="/images/profile.jpg"
+                  src="/images/profile.png"
                   alt="Kasali Olawale"
                   fill
                   className="object-cover"
