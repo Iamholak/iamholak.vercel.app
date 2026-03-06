@@ -108,6 +108,19 @@ const projects: Project[] = [
     previewType: "web",
   },
   {
+    title: "Superteam Acedemy",
+    description: "Web Platform",
+    details: [
+      "Built and deployed a focused web experience with clear learning-oriented structure.",
+      "Designed sections for discoverability, readability, and straightforward navigation.",
+      "Optimized for responsiveness and smooth access across devices.",
+    ],
+    technologies: ["Next.js", "React", "Tailwind CSS", "Vercel"],
+    link: "https://superteamacedemy.vercel.app/",
+    icon: <Globe className="w-6 h-6" />,
+    previewType: "web",
+  },
+  {
     title: "ClueInterview Desktop App",
     description: "Desktop Application Preview",
     details: [
