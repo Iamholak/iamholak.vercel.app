@@ -116,7 +116,7 @@ const projects: Project[] = [
       "Optimized for responsiveness and smooth access across devices.",
     ],
     technologies: ["Next.js", "React", "Tailwind CSS", "Vercel"],
-    link: "https://superteamacedemy.vercel.app/",
+    link: "https://superteamacademy.vercel.app/",
     icon: <Globe className="w-6 h-6" />,
     previewType: "web",
   },
