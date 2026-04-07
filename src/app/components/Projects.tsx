@@ -34,6 +34,19 @@ import sortBillsUserDashboardService from "../../public/project/sortbills/user-d
 import sortBillsUserWallet from "../../public/project/sortbills/user-wallet.png";
 import sortBillsAdminDash from "../../public/project/sortbills/admin-dash.png";
 import sortBillsAdminSetting from "../../public/project/sortbills/admin-setting.png";
+import fuudyLanding from "../../public/project/fuudy/fuudy1.png";
+import fuudyLandingTwo from "../../public/project/fuudy/fuudy2.png";
+import fuudyFoodView from "../../public/project/fuudy/fuudy-food.png";
+import fuudyProfile from "../../public/project/fuudy/fuudy-profile.png";
+import fuudyUserLogin from "../../public/project/fuudy/fuudy-login.png";
+import fuudySellerLogin from "../../public/project/fuudy/seller-login.png";
+import fuudySellerDashboard from "../../public/project/fuudy/seller-dashboard.png";
+import fuudySellerOrder from "../../public/project/fuudy/seller-order.png";
+import fuudySellerSetting from "../../public/project/fuudy/seller-setting.png";
+import fuudyAdminLogin from "../../public/project/fuudy/fuudy-admin-login.png";
+import fuudyAdminDash from "../../public/project/fuudy/admin-dash.png";
+import fuudyAdminDashOrder from "../../public/project/fuudy/admin-dash-order.png";
+import fuudyAdminDashSetting from "../../public/project/fuudy/admin-dash-setting.png";
 
 const filters = ["All", "Web", "AI", "Crypto", "Desktop"] as const;
 
@@ -52,7 +65,13 @@ type Project = {
   sourceUrl: string;
 };
 
-const HOME_PROJECT_LIMIT = 4;
+const HOME_PROJECT_NAMES = new Set([
+  "Flixorb",
+  "Clue Interview",
+  "Check Dockie",
+  "Fuudy",
+  "SortBills",
+]);
 
 const projects: Project[] = [
   {
@@ -121,6 +140,30 @@ const projects: Project[] = [
     ],
     liveUrl: "https://checkdockie.vercel.app/",
     sourceUrl: "https://github.com/Iamholak/Check-Dockie",
+  },
+  {
+    name: "Fuudy",
+    category: "Web",
+    description:
+      "A food ordering marketplace built for customer discovery, seller operations, and admin oversight across a multi-role commerce platform.",
+    stack: ["React", "Next.js", "PostgreSQL", "Marketplace"],
+    slides: [
+      { title: "Landing", image: fuudyLanding },
+      { title: "Landing Two", image: fuudyLandingTwo },
+      { title: "Food View", image: fuudyFoodView },
+      { title: "Profile", image: fuudyProfile },
+      { title: "User Login", image: fuudyUserLogin },
+      { title: "Seller Login", image: fuudySellerLogin },
+      { title: "Seller Dashboard", image: fuudySellerDashboard },
+      { title: "Seller Orders", image: fuudySellerOrder },
+      { title: "Seller Settings", image: fuudySellerSetting },
+      { title: "Admin Login", image: fuudyAdminLogin },
+      { title: "Admin Dashboard", image: fuudyAdminDash },
+      { title: "Admin Orders", image: fuudyAdminDashOrder },
+      { title: "Admin Settings", image: fuudyAdminDashSetting },
+    ],
+    liveUrl: "https://fuudy-web.vercel.app/",
+    sourceUrl: "https://github.com/Iamholak/fuudy",
   },
   {
     name: "SortBills",
@@ -478,7 +521,7 @@ export function Projects() {
   const visibleProjects = projects.filter(
     (project) => activeFilter === "All" || project.category === activeFilter,
   );
-  const homeProjects = visibleProjects.slice(0, HOME_PROJECT_LIMIT);
+  const homeProjects = visibleProjects.filter((project) => HOME_PROJECT_NAMES.has(project.name));
 
   const openViewer = (projectIndex: number) => {
     setViewerProjectIndex(projectIndex);
