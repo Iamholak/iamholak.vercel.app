@@ -15,6 +15,25 @@ import flixorbWatch from "../../public/project/flixorb/watch.png";
 import flixorbReels from "../../public/project/flixorb/reels.png";
 import flixorbCreatorDashboard from "../../public/project/flixorb/creatordashboard.png";
 import flixorbAdminDashboard from "../../public/project/flixorb/admindashboard.png";
+import flixorbLicenseLanding from "../../public/project/flixorb_lisensinng_server/flixorb-license-server.vercel.app_.png";
+import flixorbLicenseShotOne from "../../public/project/flixorb_lisensinng_server/Screenshot 2026-04-07 000447.png";
+import flixorbLicenseShotTwo from "../../public/project/flixorb_lisensinng_server/Screenshot 2026-04-07 000515.png";
+import checkDockieLanding from "../../public/project/check-dockie/check-dockie.png";
+import checkDockieDownload from "../../public/project/check-dockie/check-dockie-download.png";
+import checkDockieDashboard from "../../public/project/check-dockie/dashnoard.png";
+import checkDockieDoctorLogin from "../../public/project/check-dockie/doctor-login.png";
+import checkDockieAdminLogin from "../../public/project/check-dockie/admin-login.png";
+import checkDockieSetting from "../../public/project/check-dockie/setting.png";
+import sortBillsLanding from "../../public/project/sortbills/sortbill-landing.png";
+import sortBillsLandingTwo from "../../public/project/sortbills/sortbill-landing2.png";
+import sortBillsLandingThree from "../../public/project/sortbills/sort-bill-landing3.png";
+import sortBillsLoginUser from "../../public/project/sortbills/login-user.png";
+import sortBillsOtp from "../../public/project/sortbills/otp.png";
+import sortBillsUserDashboard from "../../public/project/sortbills/user-dashboard.png";
+import sortBillsUserDashboardService from "../../public/project/sortbills/user-dashboard-service.png";
+import sortBillsUserWallet from "../../public/project/sortbills/user-wallet.png";
+import sortBillsAdminDash from "../../public/project/sortbills/admin-dash.png";
+import sortBillsAdminSetting from "../../public/project/sortbills/admin-setting.png";
 
 const filters = ["All", "Web", "AI", "Crypto", "Desktop"] as const;
 
@@ -71,6 +90,58 @@ const projects: Project[] = [
     ],
     liveUrl: "https://clueinterview.vercel.app/",
     sourceUrl: "https://github.com/Iamholak/clueinterview",
+  },
+  {
+    name: "Flixorb Licensing Server",
+    category: "Web",
+    description:
+      "A lightweight licensing server interface for Flixorb, focused on key validation, access control, and management flows for deployment-ready licensing operations.",
+    stack: ["HTML", "CSS", "JavaScript"],
+    slides: [
+      { title: "Landing", image: flixorbLicenseLanding },
+      { title: "Dashboard View", image: flixorbLicenseShotOne },
+      { title: "License Flow", image: flixorbLicenseShotTwo },
+    ],
+    liveUrl: "https://flixorb-license-server.vercel.app/",
+    sourceUrl: "https://github.com/Iamholak/",
+  },
+  {
+    name: "Check Dockie",
+    category: "Web",
+    description:
+      "A healthcare-focused web app experience for doctor access, admin controls, onboarding, and patient-facing product flows across a polished booking platform.",
+    stack: ["React", "Web App", "Healthcare UI", "Product Platform"],
+    slides: [
+      { title: "Landing", image: checkDockieLanding },
+      { title: "Download", image: checkDockieDownload },
+      { title: "Dashboard", image: checkDockieDashboard },
+      { title: "Doctor Login", image: checkDockieDoctorLogin },
+      { title: "Admin Login", image: checkDockieAdminLogin },
+      { title: "Settings", image: checkDockieSetting },
+    ],
+    liveUrl: "https://checkdockie.vercel.app/",
+    sourceUrl: "https://github.com/Iamholak/Check-Dockie",
+  },
+  {
+    name: "SortBills",
+    category: "Web",
+    description:
+      "A billing and service management web app built for streamlined user onboarding, wallet flows, admin operations, and service control inside a modern product dashboard.",
+    stack: ["React", "Next.js", "PostgreSQL", "Web App"],
+    slides: [
+      { title: "Landing", image: sortBillsLanding },
+      { title: "Landing Two", image: sortBillsLandingTwo },
+      { title: "Landing Three", image: sortBillsLandingThree },
+      { title: "User Login", image: sortBillsLoginUser },
+      { title: "OTP Verification", image: sortBillsOtp },
+      { title: "User Dashboard", image: sortBillsUserDashboard },
+      { title: "Service Dashboard", image: sortBillsUserDashboardService },
+      { title: "Wallet", image: sortBillsUserWallet },
+      { title: "Admin Dashboard", image: sortBillsAdminDash },
+      { title: "Admin Settings", image: sortBillsAdminSetting },
+    ],
+    liveUrl: "https://sortbills-web.vercel.app/",
+    sourceUrl: "https://github.com/Iamholak/sortbills",
   },
 ];
 
